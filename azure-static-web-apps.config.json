@@ -1,0 +1,11 @@
+{
+  "routes": [
+    {
+      "route": "/flight",
+      "rewrite": "https://<your-backend-url>.azurewebsites.net/flight"
+    }
+  ],
+  "navigationFallback": {
+    "rewrite": "/index.html"
+  }
+}
