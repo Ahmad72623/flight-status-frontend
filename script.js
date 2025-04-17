@@ -31,7 +31,7 @@ async function checkFlight() {
     const resultDiv = document.getElementById("result");
 
     try {
-        const res = await fetch(`http://localhost:3000/flight?flightNumber=${flightNum}`);
+        const res = await fetch(`https://flight-status-backend-amgneka5cneeh0bp.uaenorth-01.azurewebsites.net/flight?flightNumber=${flightNum}`);
         if (!res.ok) {
             resultDiv.innerHTML = " Flight not found or not flying right now.";
             return;
